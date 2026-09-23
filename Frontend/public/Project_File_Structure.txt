@@ -1,0 +1,85 @@
+nccs-backend/
+│
+├── src/main/java/com/nccs/
+│   ├── NccsBackendApplication.java        # Main Spring Boot entry point
+│   │
+│   ├── entity/                            # JPA Entities (tables)
+│   │   ├── User.java
+│   │   ├── Volunteer.java
+│   │   ├── Admin.java
+│   │   ├── Event.java
+│   │   ├── EventRegistration.java
+│   │   ├── Donation.java
+│   │   └── Feedback.java
+│   │
+│   ├── repository/                        # JPA Repositories
+│   │   ├── UserRepository.java
+│   │   ├── VolunteerRepository.java
+│   │   ├── AdminRepository.java
+│   │   ├── EventRepository.java
+│   │   ├── EventRegistrationRepository.java
+│   │   ├── DonationRepository.java
+│   │   └── FeedbackRepository.java
+│   │
+│   ├── service/                           # Business Logic
+│   │   ├── UserService.java
+│   │   ├── VolunteerService.java
+│   │   ├── AdminService.java
+│   │   ├── EventService.java
+│   │   ├── EventRegistrationService.java
+│   │   ├── DonationService.java
+│   │   └── FeedbackService.java
+│   │
+│   └── controller/                        # REST APIs
+│       ├── UserController.java
+│       ├── VolunteerController.java
+│       ├── AdminController.java
+│       ├── EventController.java
+│       ├── EventRegistrationController.java
+│       ├── DonationController.java
+│       └── FeedbackController.java
+│
+├── src/main/resources/
+│   ├── application.properties             # DB config (MySQL)
+│   └── static/                            # (Optional) static files
+│
+├── pom.xml                                # Maven dependencies
+=========================================================================
+nccs-frontend/
+│
+├── public/                        # Static assets (favicon, global images)
+│   └── index.html
+│
+├── src/
+│   ├── main.jsx                   # React entry point
+│   ├── App.jsx                    # Root component
+│   │
+│   ├── services/                  # API calls to backend
+│   │   └── api.js                 # Axios instance + CRUD functions
+│   │
+│   ├── components/                # Reusable UI components
+│   │   ├── EventList.jsx          # Display events with images
+│   │   ├── AddEvent.jsx           # Form to add events
+│   │   ├── UserList.jsx           # Display users
+│   │   ├── AddUser.jsx            # Form to add users
+│   │   ├── DonationList.jsx       # Display donations
+│   │   ├── AddDonation.jsx        # Form to add donations
+│   │   ├── FeedbackList.jsx       # Display feedback
+│   │   └── AddFeedback.jsx        # Form to add feedback
+│   │
+│   ├── pages/                     # Page-level views
+│   │   ├── Home.jsx
+│   │   ├── EventsPage.jsx
+│   │   ├── UsersPage.jsx
+│   │   ├── DonationsPage.jsx
+│   │   └── FeedbackPage.jsx
+│   │
+│   ├── styles/                    # CSS or Tailwind configs
+│   │   └── global.css
+│   │
+│   └── router/                    # React Router setup
+│       └── AppRouter.jsx
+│
+├── package.json                   # Dependencies (React, Vite, Axios, Router)
+├── vite.config.js                 # Vite config
+└── README.md

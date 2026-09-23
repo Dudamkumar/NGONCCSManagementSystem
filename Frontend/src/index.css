@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #0b3d2e, #1b5e20);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #a5d6a7;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+}
