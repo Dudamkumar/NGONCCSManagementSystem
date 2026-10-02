@@ -12,7 +12,6 @@ function Donate() {
       alert("Please fill all fields");
       return;
     }
-
     fetch("http://localhost:8082/api/donations", {
   method: "POST",
   headers: {
