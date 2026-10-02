@@ -34,20 +34,14 @@ function Contact() {
   return (
     <div className="container">
       <h2>Contact Us 📞</h2>
-
       <h3>📍 Address</h3>
       <p>NCCS NGO, Solapur, Maharashtra, India</p>
-
       <h3>📧 Email</h3>
       <p>nccs.ngo@gmail.com</p>
-
       <h3>📱 Phone</h3>
       <p>+91 9876543210</p>
-
       <hr />
-
       <h3>Send Us a Message</h3>
-
       {submitted ? (
         <p style={{color:"lightgreen"}}>
           Thank you! We will contact you soon 🌿

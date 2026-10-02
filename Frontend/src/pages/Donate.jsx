@@ -74,11 +74,8 @@ function Donate() {
         value={amount}
         onChange={(e)=>setAmount(e.target.value)}
       />
-
       <br/><br/>
-
       <button onClick={handleDonate}>Donate Now</button>
-
     </div>
   );
 }

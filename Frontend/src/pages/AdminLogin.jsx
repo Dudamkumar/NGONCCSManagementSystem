@@ -20,7 +20,7 @@ function AdminLogin(){
  password
 });
 
-   console.log(res.data); // for debugging
+   console.log("Response Data:",res.data); 
 
    if(res.data === "success"){
 
